@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cabin Cast support</title><style>:root{--bg:#f4f5f7;--fg:#0c0e12;--muted:#5a6170;--line:#d9dce2;--accent:#1c8a5a}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--fg:#f2f3f5;--muted:#9aa3b2;--line:#262b33;--accent:#39d98a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 20px 80px}h1{font-size:30px;line-height:1.2;margin:0 0 8px;text-wrap:balance}h2{font-size:19px;margin:32px 0 6px}
+li{margin:6px 0}a{color:var(--accent)}nav{display:flex;gap:16px;margin-bottom:36px;font-size:15px;flex-wrap:wrap}nav b{display:flex;align-items:center;gap:8px}
+.mark{width:12px;height:12px;border-radius:3px;background:var(--accent);display:inline-block}code{font:14px/1.5 "SF Mono",ui-monospace,Menlo,monospace;background:color-mix(in srgb,var(--fg) 7%,transparent);padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;padding:8px 10px 8px 0;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600}
+ol li{margin:8px 0}footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}</style></head><body><main><nav><b><span class="mark"></span>Cabin Cast</b><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav><h1>Cabin Cast support</h1>
+<p>Cabin Cast shows your iPhone screen in your car's built-in web browser, over your iPhone's Personal Hotspot. Free, no account, nothing leaves your iPhone. For use while parked.</p>
+<p>Contact: <a href="mailto:hemalmodi3@gmail.com">hemalmodi3@gmail.com</a>. I read every message, and I usually reply within two working days. If you can, include your iPhone model, the iOS version, your car model and its software version.</p>
+<h2>Setup in three steps</h2>
+<ol>
+<li>On the iPhone, turn on Settings, Personal Hotspot. In the car, join that hotspot from the car's Wi-Fi settings.</li>
+<li>In the car's browser, open <code>http://240.3.3.3</code>. The page waits for the broadcast.</li>
+<li>Open Cabin Cast. Turn on the Car display link once (iOS asks to add a VPN configuration, tap Allow). Then tap Start broadcast, and Start Broadcast again in the system picker.</li>
+</ol>
+<p>Use Cabin Cast only while the car is parked. The car sees the picture only. It cannot control apps on your iPhone.</p>
+<h2>Common questions</h2>
+<p><strong>Why does iOS ask to add a VPN configuration?</strong></p>
+<p>Car browsers refuse the private address a hotspot gives your iPhone. The Car display link adds one extra address, 240.3.3.3, so the car's browser will open it. iOS files that under VPN, so it shows the VPN prompt and badge. The link connects to no service and carries no internet traffic. See the <a href="../privacy/">privacy policy</a>.</p>
+<p><strong>The car's browser says it cannot open the address.</strong></p>
+<p>Check three things: the car is joined to the iPhone's hotspot (not your home Wi-Fi), the Car display link is on in Cabin Cast, and the address is typed as <code>http://240.3.3.3</code> with http, not https. If the car still refuses it, try <code>http://172.20.10.1:8080</code> and email me which one worked, with your car's software version.</p>
+<p><strong>The page loads but the picture never appears.</strong></p>
+<p>Start the broadcast on the iPhone: tap Start broadcast in Cabin Cast, then Start Broadcast in the picker that iOS shows. The red indicator at the top of the iPhone screen means the broadcast is running. Reload the page in the car.</p>
+<p><strong>The picture stops when I lock my iPhone.</strong></p>
+<p>That is iOS: locking the phone ends screen recording. Unlock the iPhone and tap Start broadcast again. Turning off Auto-Lock while you use the car screen avoids this (Settings, Display &amp; Brightness, Auto-Lock).</p>
+<p><strong>Some apps show a black picture.</strong></p>
+<p>Apps that block screen capture, such as some streaming services and banking apps, send a black frame to every screen recorder. Cabin Cast cannot change that.</p>
+<p><strong>The picture lags or looks soft.</strong></p>
+<p>The picture is sent as compressed frames over the hotspot at up to about 12 per second. Cabin Cast lowers picture quality when the link is slow and raises it again when it recovers. Moving the iPhone closer to the car's antenna (the dashboard area) helps.</p>
+<p><strong>Is there audio?</strong></p>
+<p>No. Cabin Cast sends the picture only. Play sound on the iPhone, or through the car over Bluetooth.</p>
+<p><strong>Which cars work?</strong></p>
+<p>Any car whose built-in browser can open a web address. Cabin Cast was developed with a Tesla Model 3 and a Tesla Model Y. The table below grows as owners report their results. Email me your car model, model year and software version to add a row. Cabin Cast is not affiliated with or endorsed by any car maker. Tesla is a trademark of Tesla, Inc.</p>
+<table><tr><th>Car</th><th>Software</th><th>Address that worked</th><th>Reported</th></tr>
+<tr><td colspan="4">No owner reports yet.</td></tr></table>
+<p><strong>Does Cabin Cast collect my data?</strong></p>
+<p>No. See the <a href="../privacy/">privacy policy</a>.</p>
+<h2>Report a bug or ask for a feature</h2>
+<p>Email <a href="mailto:hemalmodi3@gmail.com">hemalmodi3@gmail.com</a> with a short description and, for a bug, the steps that cause it. In Cabin Cast, open Settings, then Diagnostics log under Advanced, and use Share diagnostics to attach the last link and broadcast events.</p><footer>Cabin Cast · Hemal Modi</footer></main></body></html>
